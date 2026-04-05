@@ -1,4 +1,4 @@
-import { Mail, Phone } from 'lucide-react';
+import { Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -15,6 +15,7 @@ export default function Contact() {
             <p>📍 Grand Prairie, TX</p>
           </div>
           <div className="flex justify-center space-x-6">
+            <a href="https://www.linkedin.com/in/chaz-6676b0256" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><Linkedin /></a>
             <a href="mailto:chaz.d.carey@outlook.com" className="hover:text-blue-400"><Mail /></a>
             <a href="tel:4322374375" className="hover:text-blue-400"><Phone /></a>
           </div>

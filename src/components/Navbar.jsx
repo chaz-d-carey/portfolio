@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Menu, Phone, X } from 'lucide-react';
+import { Linkedin, Mail, Menu, Phone, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +15,7 @@ export default function Navbar() {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-4">
+          <a href="https://www.linkedin.com/in/chaz-6676b0256" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><Linkedin /></a>
           <a href="mailto:chaz.d.carey@outlook.com" className="hover:text-blue-400"><Mail /></a>
           <a href="tel:4322374375" className="hover:text-blue-400"><Phone /></a>
         </div>
@@ -31,6 +32,9 @@ export default function Navbar() {
         {isOpen && (
           <div className="absolute top-full left-0 w-full bg-eerieBlack text-paleDogwood shadow-lg md:hidden p-4 z-50">
             <div className="flex flex-col items-center space-y-6">
+              <a href="https://www.linkedin.com/in/chaz-6676b0256" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 flex items-center space-x-3 text-white w-full justify-center py-3 border border-gray-700 rounded-lg">
+                <Linkedin /> <span>LinkedIn</span>
+              </a>
               <a href="mailto:chaz.d.carey@outlook.com" className="hover:text-blue-400 flex items-center space-x-3 text-white w-full justify-center py-3 border border-gray-700 rounded-lg">
                 <Mail /> <span>Email</span>
               </a>
